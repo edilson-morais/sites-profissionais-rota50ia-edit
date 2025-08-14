@@ -38,6 +38,22 @@ All colors MUST be HSL.
 
     --radius: 0.5rem;
 
+    /* Hero gradients and effects */
+    --gradient-hero-bg: radial-gradient(ellipse 20% 80% at 50% -20%, rgba(120,119,198,0.15), rgba(255,255,255,0));
+    --gradient-hero-bg-dark: radial-gradient(ellipse 20% 80% at 50% -20%, rgba(120,119,198,0.3), rgba(255,255,255,0));
+    --gradient-hero-text: linear-gradient(180deg, #000 0%, rgba(0, 0, 0, 0.75) 100%);
+    --gradient-hero-text-dark: linear-gradient(180deg, #FFF 0%, rgba(255, 255, 255, 0.00) 202.08%);
+    --gradient-purple-pink: linear-gradient(to right, #9333ea, #ec4899);
+    --gradient-purple-orange: linear-gradient(to right, #c084fc, #fed7aa);
+    --gradient-conic-spin: conic-gradient(from 90deg at 50% 50%, #E2CBFF 0%, #393BB2 50%, #E2CBFF 100%);
+    
+    /* Animation variables */
+    --grid-angle: 65deg;
+    --cell-size: 60px;
+    --opacity: 0.5;
+    --light-line: gray;
+    --dark-line: gray;
+
     --sidebar-background: 0 0% 98%;
 
     --sidebar-foreground: 240 5.3% 26.1%;
@@ -100,6 +116,33 @@ All colors MUST be HSL.
   }
 
   body {
-    @apply bg-background text-foreground;
+    @apply bg-background text-foreground font-sans;
   }
+}
+
+/* Custom animations for hero component */
+@keyframes grid {
+  0% {
+    transform: translateX(-50%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Custom utility classes */
+.animate-grid {
+  animation: grid 15s linear infinite;
+}
+
+.font-geist {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif;
+  font-feature-settings: 'cv11', 'ss01';
+  font-variation-settings: 'opsz' 32;
 }
