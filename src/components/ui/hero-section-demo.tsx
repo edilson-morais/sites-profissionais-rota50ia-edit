@@ -6,23 +6,20 @@ function HeroSectionDemo() {
   return (
     <div className="animate-fade-in">
       <HeroSection
-        title="Construa produtos para todos"
+        title="Welcome to Our Platform"
         subtitle={{
-          regular: "Transforme suas ideias em ",
-          gradient: "experiências digitais incríveis",
+          regular: "Transform your ideas into ",
+          gradient: "beautiful",
         }}
-        description="Transforme suas ideias em realidade com nossa suíte abrangente de ferramentas de desenvolvimento e recursos projetados para criadores modernos."
-        ctaText="Começar Agora"
+        description="Transform your ideas into reality with our comprehensive suite of development tools and resources."
+        ctaText="Get Started"
         ctaHref="/signup"
-        bottomImage={{
-          light: dashboardLight,
-          dark: dashboardDark,
-        }}
+        bottomImage={undefined}
         gridOptions={{
           angle: 65,
-          opacity: 0.3,
-          cellSize: 45,
-          lightLineColor: "#3a3a3a",
+          opacity: 0.15,
+          cellSize: 40,
+          lightLineColor: "#2a2a2a",
           darkLineColor: "#1a1a1a",
         }}
       />
