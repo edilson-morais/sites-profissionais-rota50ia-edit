@@ -41,7 +41,7 @@ export const Contact = () => {
                 <MapPin className="w-6 h-6 text-primary mr-4" />
                 <div>
                   <p className="font-semibold text-foreground">Localização</p>
-                  <p className="text-muted-foreground">São Paulo, SP</p>
+                  <p className="text-muted-foreground">Goiânia - GO</p>
                 </div>
               </div>
             </div>
