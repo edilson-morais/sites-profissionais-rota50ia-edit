@@ -4,12 +4,12 @@ function HeroSectionDemo() {
   return (
     <div className="animate-fade-in">
       <HeroSection
-        title="Sites profissionais que colocam sua empresa"
+        title="Sites profissionais que colocam sua empresa na frente no"
         subtitle={{
-          regular: "na frente no ",
+          regular: "",
           gradient: "Google",
         }}
-        description="Desenvolvimento web moderno + SEO estratégico = Mais clientes para o seu negócio"
+        description="e dos seus clientes"
         ctaText="Solicitar Orçamento"
         ctaHref="#contact"
         bottomImage={undefined}
