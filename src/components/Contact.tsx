@@ -1,11 +1,9 @@
-import { Button } from "@/components/ui/button"
-import { Input } from "@/components/ui/input"
-import { Textarea } from "@/components/ui/textarea"
-import { Mail, Phone, MapPin } from "lucide-react"
-
+import { Button } from "@/components/ui/button";
+import { Input } from "@/components/ui/input";
+import { Textarea } from "@/components/ui/textarea";
+import { Mail, Phone, MapPin } from "lucide-react";
 export const Contact = () => {
-  return (
-    <section id="contact" className="py-24 bg-background">
+  return <section id="contact" className="py-24 bg-background">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold text-foreground mb-4">
@@ -27,7 +25,7 @@ export const Contact = () => {
                 <Phone className="w-6 h-6 text-primary mr-4" />
                 <div>
                   <p className="font-semibold text-foreground">Telefone</p>
-                  <p className="text-muted-foreground">(11) 99999-9999</p>
+                  <p className="text-muted-foreground">(62)981221474 - Edilson Morais</p>
                 </div>
               </div>
               
@@ -97,10 +95,7 @@ export const Contact = () => {
                 <label className="text-sm font-medium text-foreground mb-2 block">
                   Mensagem
                 </label>
-                <Textarea 
-                  placeholder="Conte-nos sobre seu projeto..."
-                  rows={4}
-                />
+                <Textarea placeholder="Conte-nos sobre seu projeto..." rows={4} />
               </div>
               
               <Button className="w-full" size="lg">
@@ -110,6 +105,5 @@ export const Contact = () => {
           </div>
         </div>
       </div>
-    </section>
-  )
-}
+    </section>;
+};
