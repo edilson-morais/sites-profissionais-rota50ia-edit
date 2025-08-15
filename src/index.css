@@ -8,44 +8,49 @@ All colors MUST be HSL.
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+    --background: 220 26% 8%;
+    --foreground: 210 40% 98%;
 
-    --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
+    --card: 220 26% 10%;
+    --card-foreground: 210 40% 98%;
 
-    --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
+    --popover: 220 26% 12%;
+    --popover-foreground: 210 40% 98%;
 
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
+    --primary: 217 91% 60%;
+    --primary-foreground: 220 26% 8%;
 
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
+    --secondary: 220 26% 15%;
+    --secondary-foreground: 210 40% 98%;
 
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
+    --muted: 220 26% 12%;
+    --muted-foreground: 215 20% 65%;
 
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
+    --accent: 217 91% 60%;
+    --accent-foreground: 220 26% 8%;
 
-    --destructive: 0 84.2% 60.2%;
+    --destructive: 0 84% 60%;
     --destructive-foreground: 210 40% 98%;
 
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
+    --border: 220 26% 18%;
+    --input: 220 26% 15%;
+    --ring: 217 91% 60%;
 
     --radius: 0.5rem;
 
-    /* Hero gradients and effects */
-    --gradient-hero-bg: radial-gradient(ellipse 20% 80% at 50% -20%, rgba(120,119,198,0.15), rgba(255,255,255,0));
-    --gradient-hero-bg-dark: radial-gradient(ellipse 20% 80% at 50% -20%, rgba(120,119,198,0.3), rgba(255,255,255,0));
-    --gradient-hero-text: linear-gradient(180deg, #000 0%, rgba(0, 0, 0, 0.75) 100%);
-    --gradient-hero-text-dark: linear-gradient(180deg, #FFF 0%, rgba(255, 255, 255, 0.00) 202.08%);
-    --gradient-purple-pink: linear-gradient(to right, #9333ea, #ec4899);
-    --gradient-purple-orange: linear-gradient(to right, #c084fc, #fed7aa);
-    --gradient-conic-spin: conic-gradient(from 90deg at 50% 50%, #E2CBFF 0%, #393BB2 50%, #E2CBFF 100%);
+    /* Hero gradients and effects - Dark blue themes */
+    --gradient-hero-bg: radial-gradient(ellipse 40% 80% at 50% -20%, rgba(59, 130, 246, 0.15), rgba(0, 0, 0, 0.8));
+    --gradient-hero-bg-dark: radial-gradient(ellipse 40% 80% at 50% -20%, rgba(59, 130, 246, 0.25), rgba(0, 0, 0, 0.9));
+    --gradient-hero-text: linear-gradient(180deg, #1e293b 0%, rgba(0, 0, 0, 0.9) 100%);
+    --gradient-hero-text-dark: linear-gradient(180deg, #f8fafc 0%, rgba(59, 130, 246, 0.8) 202.08%);
+    --gradient-blue-purple: linear-gradient(135deg, #1e40af, #3b82f6, #6366f1);
+    --gradient-dark-blue: linear-gradient(135deg, #0f172a, #1e293b, #334155);
+    --gradient-conic-spin: conic-gradient(from 90deg at 50% 50%, #3b82f6 0%, #1e40af 50%, #3b82f6 100%);
+    
+    /* New dark gradients with transparency */
+    --gradient-card-bg: linear-gradient(135deg, rgba(30, 41, 59, 0.8), rgba(51, 65, 85, 0.6));
+    --gradient-button-bg: linear-gradient(135deg, rgba(59, 130, 246, 0.9), rgba(99, 102, 241, 0.8));
+    --gradient-section-bg: linear-gradient(180deg, rgba(15, 23, 42, 0.95), rgba(30, 41, 59, 0.8));
     
     /* Animation variables */
     --grid-angle: 65deg;
@@ -72,33 +77,33 @@ All colors MUST be HSL.
   }
 
   .dark {
-    --background: 222.2 84% 4.9%;
+    --background: 215 28% 6%;
     --foreground: 210 40% 98%;
 
-    --card: 222.2 84% 4.9%;
+    --card: 215 28% 8%;
     --card-foreground: 210 40% 98%;
 
-    --popover: 222.2 84% 4.9%;
+    --popover: 215 28% 10%;
     --popover-foreground: 210 40% 98%;
 
-    --primary: 210 40% 98%;
-    --primary-foreground: 222.2 47.4% 11.2%;
+    --primary: 217 91% 65%;
+    --primary-foreground: 215 28% 6%;
 
-    --secondary: 217.2 32.6% 17.5%;
+    --secondary: 215 28% 12%;
     --secondary-foreground: 210 40% 98%;
 
-    --muted: 217.2 32.6% 17.5%;
-    --muted-foreground: 215 20.2% 65.1%;
+    --muted: 215 28% 10%;
+    --muted-foreground: 215 20% 70%;
 
-    --accent: 217.2 32.6% 17.5%;
-    --accent-foreground: 210 40% 98%;
+    --accent: 217 91% 65%;
+    --accent-foreground: 215 28% 6%;
 
-    --destructive: 0 62.8% 30.6%;
+    --destructive: 0 84% 60%;
     --destructive-foreground: 210 40% 98%;
 
-    --border: 217.2 32.6% 17.5%;
-    --input: 217.2 32.6% 17.5%;
-    --ring: 212.7 26.8% 83.9%;
+    --border: 215 28% 15%;
+    --input: 215 28% 12%;
+    --ring: 217 91% 65%;
     --sidebar-background: 240 5.9% 10%;
     --sidebar-foreground: 240 4.8% 95.9%;
     --sidebar-primary: 224.3 76.3% 48%;
@@ -189,4 +194,37 @@ All colors MUST be HSL.
 
 .hover-scale:hover {
   transform: scale(1.05);
+}
+
+/* Dark blue gradient utilities */
+.bg-gradient-card {
+  background: var(--gradient-card-bg);
+}
+
+.bg-gradient-button {
+  background: var(--gradient-button-bg);
+}
+
+.bg-gradient-section {
+  background: var(--gradient-section-bg);
+}
+
+.bg-gradient-blue-purple {
+  background: var(--gradient-blue-purple);
+}
+
+.bg-gradient-dark-blue {
+  background: var(--gradient-dark-blue);
+}
+
+/* Backdrop blur and transparency effects */
+.backdrop-blur-dark {
+  backdrop-filter: blur(10px);
+  background: rgba(15, 23, 42, 0.8);
+}
+
+.glass-effect {
+  background: rgba(30, 41, 59, 0.7);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(59, 130, 246, 0.2);
 }

@@ -77,34 +77,54 @@ const HeroSection = React.forwardRef<HTMLDivElement, HeroSectionProps>(
     ref,
   ) => {
     return (
-      <div className={cn("relative min-h-screen", className)} ref={ref} {...props}>
-        <div className="absolute top-0 z-[0] h-full w-full bg-gray-950 bg-[radial-gradient(ellipse_20%_80%_at_50%_-20%,rgba(120,119,198,0.1),rgba(255,255,255,0))]" />
-        <section className="relative max-w-full mx-auto z-1">
-          <RetroGrid {...gridOptions} />
-          <div className="max-w-4xl z-10 mx-auto px-4 py-32 gap-12 md:px-8 flex flex-col items-center justify-center min-h-screen">
+      <div className={cn("relative min-h-screen bg-gradient-dark-blue", className)} ref={ref} {...props}>
+        {/* Enhanced dark blue gradient background */}
+        <div className="absolute top-0 z-[0] h-full w-full bg-gradient-to-br from-blue-950 via-slate-900 to-black" />
+        <div 
+          className="absolute top-0 z-[1] h-full w-full"
+          style={{
+            background: 'radial-gradient(ellipse 60% 80% at 50% -20%, rgba(30, 64, 175, 0.3), rgba(15, 23, 42, 0.8))'
+          }}
+        />
+        
+        <section className="relative max-w-full mx-auto z-10">
+          <RetroGrid 
+            angle={gridOptions?.angle || 65}
+            cellSize={gridOptions?.cellSize || 45}
+            opacity={gridOptions?.opacity || 0.15}
+            lightLineColor="#1e40af"
+            darkLineColor="#1e293b"
+            {...gridOptions} 
+          />
+          
+          <div className="max-w-4xl z-20 mx-auto px-4 py-32 gap-12 md:px-8 flex flex-col items-center justify-center min-h-screen">
             <div className="space-y-8 max-w-4xl mx-auto text-center">
-              <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-gray-700/50 bg-gray-800/30 backdrop-blur-sm">
-                <span className="text-sm text-gray-300 font-medium">{title}</span>
-                <ChevronRight className="w-4 h-4 text-gray-400" />
+              {/* Top tag with glass effect */}
+              <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full glass-effect">
+                <span className="text-sm text-blue-300 font-medium">{title}</span>
+                <ChevronRight className="w-4 h-4 text-blue-400" />
               </div>
               
-              <h1 className="text-5xl md:text-7xl font-bold tracking-tight text-white leading-tight">
-                {subtitle.regular}
-                <span className="bg-gradient-to-r from-purple-400 via-purple-500 to-purple-600 bg-clip-text text-transparent">
+              {/* Main title with blue gradients */}
+              <h1 className="text-5xl md:text-7xl font-bold tracking-tight leading-tight">
+                <span className="text-white">{subtitle.regular}</span>
+                <span className="bg-gradient-to-r from-blue-400 via-blue-500 to-purple-500 bg-clip-text text-transparent">
                   {subtitle.gradient}
                 </span>
                 <br />
-                <span className="text-white">digital experiences</span>
+                <span className="text-blue-100">digital experiences</span>
               </h1>
               
-              <p className="text-lg text-gray-400 max-w-2xl mx-auto leading-relaxed">
+              {/* Description */}
+              <p className="text-lg text-blue-200/80 max-w-2xl mx-auto leading-relaxed">
                 {description}
               </p>
               
+              {/* CTA Button with gradient */}
               <div className="pt-4">
                 <a
                   href={ctaHref}
-                  className="inline-flex items-center justify-center px-8 py-4 text-base font-medium text-white bg-transparent border border-purple-500/50 rounded-full hover:border-purple-400 hover:bg-purple-500/10 transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-purple-500 focus:ring-offset-2 focus:ring-offset-gray-900"
+                  className="inline-flex items-center justify-center px-8 py-4 text-base font-medium text-white bg-gradient-button rounded-full hover:scale-105 transition-all duration-300 shadow-lg shadow-blue-500/25 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:ring-offset-2 focus:ring-offset-slate-900"
                 >
                   {ctaText}
                 </a>
