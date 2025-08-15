@@ -4,9 +4,9 @@ function HeroSectionDemo() {
   return (
     <div className="animate-fade-in">
       <HeroSection
-        title="Sites profissionais que colocam sua empresa na frente no"
+        title="Sites profissionais que colocam sua empresa"
         subtitle={{
-          regular: "",
+          regular: "na frente no ",
           gradient: "Google",
         }}
         description="e dos seus clientes"

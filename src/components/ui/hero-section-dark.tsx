@@ -105,14 +105,14 @@ const HeroSection = React.forwardRef<HTMLDivElement, HeroSectionProps>(
                 <ChevronRight className="w-4 h-4 text-blue-400" />
               </div>
               
-              {/* Main title with blue gradients */}
-              <h1 className="text-5xl md:text-7xl font-bold tracking-tight leading-tight">
+              {/* Main title with blue gradients - Extra Large */}
+              <h1 className="text-6xl md:text-8xl lg:text-9xl xl:text-[8rem] font-bold tracking-tight leading-tight">
+                <span className="text-white">{title}</span>
+                <br />
                 <span className="text-white">{subtitle.regular}</span>
                 <span className="bg-gradient-to-r from-blue-400 via-blue-500 to-purple-500 bg-clip-text text-transparent">
                   {subtitle.gradient}
                 </span>
-                <br />
-                <span className="text-blue-100">digital experiences</span>
               </h1>
               
               {/* Description */}
