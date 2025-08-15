@@ -54,7 +54,7 @@ export const Footer = () => {
               © 2024 WebPro. Todos os direitos reservados.
             </p>
             <div className="flex space-x-6 mt-4 md:mt-0">
-              <a href="#" className="text-blue-200/70 hover:text-blue-400 text-sm transition-colors">
+              <a href="https://politica-de-privacidade.rota50ia.com/" className="text-blue-200/70 hover:text-blue-400 text-sm transition-colors">
                 Política de Privacidade
               </a>
               <a href="#" className="text-blue-200/70 hover:text-blue-400 text-sm transition-colors">
