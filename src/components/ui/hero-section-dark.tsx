@@ -76,7 +76,7 @@ const HeroSection = React.forwardRef<HTMLDivElement, HeroSectionProps>(({
               
               
               {/* Main title with blue gradients - Extra Large */}
-              <h1 className="text-[3.125rem] md:text-[5.375rem] lg:text-[7.375rem] xl:text-[7.375rem] font-bold tracking-tight leading-tight">
+              <h1 className="text-[1.25rem] md:text-[3.5rem] lg:text-[5.5rem] xl:text-[5.5rem] font-bold tracking-tight leading-tight">
                 <span className="text-white">{title}</span>
                 <br />
                 <span className="text-white">{subtitle.regular}</span>
