@@ -4,8 +4,12 @@ export const Footer = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="py-12 grid grid-cols-1 md:grid-cols-4 gap-8">
           <div className="col-span-1 md:col-span-2">
-            <div className="mb-4">
-              <span className="text-2xl font-bold bg-gradient-to-r from-blue-400 to-blue-500 bg-clip-text text-transparent">Rota50IA</span>
+            <div className="mb-4 flex items-center">
+              <img 
+                src="/lovable-uploads/2470a09f-5cd2-4f41-8f92-433a78629e4b.png" 
+                alt="Equipe Rota50IA Logo" 
+                className="h-12 w-auto object-contain"
+              />
             </div>
             <p className="text-blue-200/80 mb-6 max-w-md">
               Criamos sites profissionais que colocam sua empresa na frente no Google. 
