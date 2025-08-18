@@ -83,12 +83,9 @@ const HeroSection = React.forwardRef<HTMLDivElement, HeroSectionProps>(({
                 <span className="bg-gradient-to-r from-blue-400 via-blue-500 to-purple-500 bg-clip-text text-transparent">
                   {subtitle.gradient}
                 </span>
+                <br />
+                <span className="text-white">{description}</span>
               </h1>
-              
-              {/* Description */}
-              <p className="text-lg text-blue-200/80 max-w-2xl mx-auto leading-relaxed">
-                {description}
-              </p>
               
               {/* CTA Button with gradient */}
               <div className="pt-4">
