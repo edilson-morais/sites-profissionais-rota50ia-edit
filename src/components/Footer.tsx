@@ -12,8 +12,7 @@ export const Footer = () => {
               />
             </div>
             <p className="text-blue-200/80 mb-6 max-w-md">
-              Criamos sites profissionais que colocam sua empresa na frente no Google. 
-              Desenvolvimento web moderno e estratégias de SEO para impulsionar seu negócio online.
+              Fazemos sites profissionais que colocam sua empresa em destaque no Google e ajudam mais clientes a te encontrar online.
             </p>
             <div className="flex space-x-4">
               <a href="#" className="text-blue-300 hover:text-blue-400 transition-colors">
